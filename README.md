@@ -1,0 +1,1 @@
+hotchocolate-input-validation
