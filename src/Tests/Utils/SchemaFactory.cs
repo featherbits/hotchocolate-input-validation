@@ -23,7 +23,7 @@ namespace Tests
             {
                 c.RegisterExtendedScalarTypes();
                 c.RegisterServiceProvider(sp);
-                c.Use(next => ctx => ctx.Service<IFieldValidatorMiddleware>().Run(ctx, next));
+                c.UseInputValidation();
                 c.BindType<TMutation>();
                 c.RegisterDirective<TDirectiveType>();
             });
