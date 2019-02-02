@@ -4,7 +4,7 @@ namespace Featherbits.HotChocolate.Validation.Directives
 {
     public class RangeDirective
     {
-        public decimal From { get; }
-        public decimal To { get; }
+        public decimal From { get; set; }
+        public decimal To { get; set; }
     }
 }
